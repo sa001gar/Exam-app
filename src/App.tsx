@@ -70,8 +70,8 @@ function App() {
       const timestamp = new Date().toLocaleString();
 
       const formData = new FormData();
-      formData.append('access_key', import.meta.env.VITE_WEB3FORMS_KEY);
-      // formData.append('access_key', '0abeed7e-2357-4ce9-9a8c-c6d88c4effbf');
+      // formData.append('access_key', import.meta.env.VITE_WEB3FORMS_KEY);
+      formData.append('access_key', '0abeed7e-2357-4ce9-9a8c-c6d88c4effbf');
       formData.append('from_name', 'Exam Data');
       formData.append('subject', `Exam Submission - ${student.name} (${timestamp})`);
       formData.append('message', emailContent);
